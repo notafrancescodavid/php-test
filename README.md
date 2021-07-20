@@ -7,8 +7,8 @@ In particular it is necessary to:
 2) "cd" in the directory where the repository has been cloned.
 3) run "php index.php"
 
-To change the input file it is necessary to change the variable "$fileName" in the file index.php.
-The $fileName variable can assume 4 values, based on the input files available under the input directory.
+To change the input file it is necessary to change the variable $fileName in the file "index.php".
+The $fileName variable can assume 4 values, based on the input files available under the "input" directory.
 These values are:
 "input1.txt", "input2.txt", "input3.txt", "input4.txt"
 
