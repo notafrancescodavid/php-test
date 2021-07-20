@@ -16,17 +16,18 @@ It is possible to run the unit tests of all the classes by using phpunit.
 Specifically, by presuming that the current directory is the project directory, the tests can be run with the following command:
 "phpunit test"
 
-CODE FAST EXPLANATION.
+FAST EXPLANATION OF THE CODE (FOR MORE DETAILS SEE THE COMMENTS IN THE CODE)
 
 The code is divided into 3 folders: basket, products and common.
  
-The common folder has a Utils class with some utility functions.
+The "common" folder has a one class:
+Utils: containes some utility functions.
 
-The products folder has two Classes: 
-Product: represents the concept of a product and is responsible to manage its internal state, calculate taxes and the product price.
+The "products" folder has two Classes: 
+Product: represents the concept of a product and is responsible to calculate its taxes and price.
 ProductType: is used as an utility to recognize different types of products and keep track of them.
 
-The basket folder has three classes:
-ProductItem: Represents an item in the purchase list. It has multiple equal products and it calculates the total taxes and price of the products in the item.
-ShoppingBasket: It is formed by all ProductItems. It calculates the entire taxes and prices of the shopping basket and it prints the receipt
-ProductItemDecoder: It decodes a line of string input into data usable to instantiate a Product Item
+The "basket" folder has three classes:
+ProductItem: Represents an item in the purchase list. It has multiple equal Product objects and it calculates the total taxes and price of the products in the item;
+ShoppingBasket: It is formed by all ProductItems. It calculates the entire taxes and prices of the shopping basket and it prints the receipt;
+ProductItemDecoder: It decodes a line of string input into data usable to instantiate a ProductItem;
